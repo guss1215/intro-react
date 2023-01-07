@@ -25,7 +25,7 @@ function useLocalStorage(itemName, initialValue) {
 //   }
 //   }, 1000);
 // }, []);
- 
+// eslint-disable-next-line
     React.useEffect(() => {
         setTimeout(() => {
             let localStorageItem = localStorage.getItem(itemName);
@@ -44,7 +44,7 @@ function useLocalStorage(itemName, initialValue) {
             }
             setItem(parsedItem);
             setLoading(false);
-
+// eslint-disable-next-line
         }, 1000)}, []);
 
 
